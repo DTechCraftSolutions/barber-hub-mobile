@@ -1,4 +1,4 @@
-import { Image, ImageBackground, Text, View } from "react-native";
+import { Image, ImageBackground, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 export function TypeUserOption() {
