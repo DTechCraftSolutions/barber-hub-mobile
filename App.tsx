@@ -5,7 +5,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   return (
-    <View className="w-full h-full bg-black">
+    <View className="w-screen h-[110vh] bg-black">
       <SafeAreaProvider style={{ flex: 1 }}>
         <StatusBar
           translucent
