@@ -1,14 +1,19 @@
-import { StatusBar } from "expo-status-bar";
-import {Text, View } from "react-native";
+import { StatusBar } from "react-native";
+import { View } from "react-native";
 import { Routes } from "./src/routes";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   return (
-    <View  className="bg-black w-screen h-screen mt-8
-    ">
-      <Routes />
-      <StatusBar backgroundColor="black" style="light" />
+    <View className="w-full h-full bg-black">
+      <SafeAreaProvider style={{ flex: 1 }}>
+        <StatusBar
+          translucent
+          barStyle="light-content"
+          backgroundColor="transparent"
+        />
+        <Routes />
+      </SafeAreaProvider>
     </View>
   );
 }
-
