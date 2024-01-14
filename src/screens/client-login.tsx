@@ -38,7 +38,9 @@ export function ClientLogin({ navigation }: any) {
                     <View className="w-full h-px bg-secondary mt-12">
                         <Text className="bg-black mx-auto h-10 relative bottom-4 font-bold text-xl px-4 text-white z-20">Ou</Text>
                     </View>
-                    <TouchableOpacity className="mt-8 mx-auto">
+                    <TouchableOpacity 
+                    onPress={() => navigation.navigate('client-register')}
+                    className="mt-8 mx-auto">
                         <Text className="text-secondary text-lg font-bold underline">
                             Registre-se
                         </Text>
