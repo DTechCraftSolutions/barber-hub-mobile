@@ -18,7 +18,9 @@ export function ClientLogin({ navigation }: any) {
             <ImageBackground className="w-full bg-cover bg-no-repeat  h-full justify-end" source={require('../../assets/home.png')}>
                 <ImageBackground className="w-full  h-[80vh]" source={require('../../assets/elipse.png')}>
                     <Image className="w-28 ml-3 h-28" source={require('../../assets/logo.png')} />
-                    <TouchableOpacity className="w-[360px] h-14  bg-zinc-800 flex-row mt-8 rounded-md items-center  justify-center mx-auto">
+                    <TouchableOpacity 
+                    onPress={() => navigation.navigate('home')}
+                    className="w-[360px] h-14  bg-zinc-800 flex-row mt-8 rounded-md items-center  justify-center mx-auto">
                         <Image className="w-6 h-6 mr-4" source={require('../../assets/google.png')} />
                         <Text style={{ fontFamily: 'Oswald_600SemiBold' }} className="text-white font-medium text-lg">
                             Entre com Google
@@ -37,7 +39,9 @@ export function ClientLogin({ navigation }: any) {
                             Esqueceu a senha?
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity className="w-[360px] h-14 bg-secondary rounded-md mt-4 mx-auto justify-center items-center">
+                    <TouchableOpacity
+                    onPress={() => navigation.navigate('home')}
+                    className="w-[360px] h-14 bg-secondary rounded-md mt-4 mx-auto justify-center items-center">
                         <Text
                         style={{fontFamily: 'Oswald_600SemiBold'}}
                         className="text-white font-medium text-lg">
