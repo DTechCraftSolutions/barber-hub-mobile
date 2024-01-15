@@ -41,9 +41,6 @@ export function ClientLogin() {
       navigate("home");
     } catch (error: AxiosError | any) {
       console.error(error.message);
-    } finally {
-      const token = getToken();
-      console.log(token);
     }
   }
   function handleChangeEmail(text: string) {
